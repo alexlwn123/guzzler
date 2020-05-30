@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Raleway:wght@900&display=swap');
+
+body {
+    background-image: linear-gradient(#f95d9b, #e71d7a);
+    text-align: center;
+}
+
+.titleCard {
+    padding: 10%;
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    animation-name: welcome;
+    animation-duration: 1s;
+}
+
+button {
+    opacity: 0;
+    padding: 2%;
+    margin-top: 10%;
+    background-color: #347dc5;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    border: none;
+    bottom: 20%;
+    animation: button 2s forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes button {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
