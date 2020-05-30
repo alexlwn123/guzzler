@@ -3,32 +3,29 @@ import { Link } from "react-router-dom";
 
 const Header = (props) => {
 
+  const Style = {
+    margin: "25px",
+    padding: "15px"
+  }
+
   return (
     <div>
       <nav>
-        <ul className="items">
-          <li>
-            <Link to="/">
-              <button>
-                Home
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link to="/diagnostics">
-              <button>
-                Diagnostics 
-              </button>
-            </Link>
-            </li>
-          <li>
-            <Link to="/simulator">
-              <button>
-                CupSimulator
-              </button>
-            </Link>
-          </li>
-        </ul>
+        <Link to="/">
+          <button style={{Style}}>
+            Home
+          </button>
+        </Link>
+        <Link to="/diagnostics">
+          <button style={{Style}}>
+            Diagnostics 
+          </button>
+        </Link>
+        <Link to="/simulator">
+          <button style={{Style}}>
+            CupSimulator
+          </button>
+        </Link>
       </nav>
     </div>
   )
