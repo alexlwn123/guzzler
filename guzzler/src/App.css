@@ -3,6 +3,9 @@
 
 body {
     background-image: linear-gradient(#f95d9b, #e71d7a);
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -64,6 +67,8 @@ body {
     height: 0px;
     width: 100px;
 }
+
+
 
 
 @keyframes welcome {
