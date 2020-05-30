@@ -1,21 +1,13 @@
 import React, { useState } from 'react';
+import { Route, Link } from "react-router-dom";
+import CupSimulator from './CupSimulator';
 
-function Diagnostics() {
-  const [heightFt, setHeightFt] = useState("");
-  const [heightIn, setHeightIn] = useState("");
-  const [weight, setWeight] = useState("");
-  const [material, setMaterial] = useState("");
-  const [amount, setAmount] = useState("");
-  
-  function handleChange(event) {
-    const {name, value, checked, type} = event.target;
-    if (name === "height_ft") setHeightFt(value);
-    if (name === "height_in") setHeightIn(value);
-    if (name === "weight") setWeight(value);
-    if (name === "substance") setMaterial(value);
-    if (name === "amount") setAmount(value);
-  }  
-   
+function Diagnostics(props) {
+  const { heightFt, heightIn, material, amount } = props.data;
+
+  function onSubmit() {
+
+  }
 
   return (
     <div>
@@ -28,7 +20,7 @@ function Diagnostics() {
           name="height_ft"
           placeholder="ft"
           value={heightFt}
-          onChange={handleChange} 
+          onChange={props.handler} 
         />
         <input
           type = "number"
@@ -37,7 +29,7 @@ function Diagnostics() {
           name="height_in"
           placeholder="in"
           value={heightIn}
-          onChange={handleChange} 
+          onChange={props.handler} 
         />
 
         
@@ -45,7 +37,7 @@ function Diagnostics() {
         <select
           value={material}
           name="substance"
-          onChange={handleChange}
+          onChange={props.handler}
         >       
           <option value = "">-- Select a substance --</option>
           <option value = "water">Water</option>
@@ -61,9 +53,14 @@ function Diagnostics() {
           name="amount"
           placeholder="(ml)"
           value={amount}
-          onChange={handleChange} 
+          onChange={props.handler} 
         />
-    
+
+        <br /> 
+        <br /> 
+        <Link to='/simulator'>
+          <button>Submit</button>
+        </Link>
       </form>
     </div>
   )

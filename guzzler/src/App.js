@@ -1,46 +1,41 @@
 import React, {useState} from 'react';
-import Footer from './Components/footer';
-import Body from './Components/body';
-import Header from './Components/navbar';
 import './App.css';
-import LandingScreen from './Components/LandingScreen';
-import { BrowserRouter as Router, Route, Link  } from "react-router-dom";
-import Diagnostics from './Components/Q1';
-import Simulator from './Components/CupSimulator'
+import { Route, Switch } from "react-router-dom";
+import loadable from "@loadable/component";
+import Loading from "./Components/Loading";
+import Header from "./Components/navbar.js";
 
 function App() {
-//  const Landing = () => {return <LandingScreen, name= />};
-//  const [screen, setscreen] = useState(Landing);
-//
-//  function handleClick() {
-//      
-//  } 
+  
+  const LandingScreen = loadable(() => import("./Components/LandingScreen.js"), {fallback: <Loading />});
+  const Simulator = loadable(() => import("./Components/CupSimulator.js"), {fallback: <Loading />});
+  const Diagnostics = loadable(() => import("./Components/Q1.js"), {fallback: <Loading />});
+
+  const [heightFt, setHeightFt] = useState("");
+  const [heightIn, setHeightIn] = useState("");
+  const [weight, setWeight] = useState("");
+  const [material, setMaterial] = useState("");
+  const [amount, setAmount] = useState("");
+
+  const items={'heightFt': heightFt, 'heightIn': heightIn, 'weight': weight, 'material': material, 'amount': amount};
+
+  function handleChange(event) {
+    const {name, value, checked, type} = event.target;
+    if (name === "height_ft") setHeightFt(value);
+    if (name === "height_in") setHeightIn(value);
+    if (name === "weight") setWeight(value);
+    if (name === "substance") setMaterial(value);
+    if (name === "amount") setAmount(value);
+  }  
 
   return (
     <div>
-      <nav>
-        <Link to="/">
-          <button>
-            Home
-          </button>
-        </Link>
-        <Link to="/diagnostics">
-          <button>
-            Diagnostics 
-          </button>
-        </Link>
-        <Link to="/CupSimulator">
-          <button>
-            CupSimulator
-          </button>
-        </Link>
-      </nav>
-
-      <div>
-        <Route exact path="/" component={LandingScreen} />
-        <Route exact path="/diagnostics" component={Diagnostics} />
+      <Header />
+      <Switch>
+        <Route exact path="/diagnostics"> <Diagnostics handler={handleChange} data={items} /></Route>
         <Route exact path="/simulator" component={Simulator} />
-      </div>
+        <Route exact path="/" component={LandingScreen} />
+      </Switch>
     </div>
   );
 }
