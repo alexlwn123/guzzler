@@ -17,7 +17,7 @@ body {
     animation-duration: 1s;
 }
 
-button {
+.welcomeButton {
     opacity: 0;
     padding: 2%;
     margin-top: 10%;
@@ -30,6 +30,39 @@ button {
     bottom: 20%;
     animation: button 2s forwards;
     animation-delay: 1s;
+}
+
+.startButton {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%);
+    background: #347DC5;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #FFFFFF;
+    
+}
+
+.cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 200px solid lightblue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0px;
+    width: 100px;
 }
 
 
