@@ -5,6 +5,9 @@
 .body {
     background-image: linear-gradient(#f95d9b, #e71d7a);
     text-align: center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .titleCard {
