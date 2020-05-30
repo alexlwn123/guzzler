@@ -29,14 +29,14 @@ function App() {
   }  
 
   return (
-    <body>
+    <div className="body">
       <Header />
       <Switch>
         <Route exact path="/diagnostics"> <Diagnostics handler={handleChange} data={items} /></Route>
         <Route exact path="/simulator" component={Simulator} />
         <Route exact path="/" component={LandingScreen} />
       </Switch>
-    </body>
+    </div>
   );
 }
 

@@ -86,7 +86,7 @@ body {
     }
 }
 
-p {
+.p {
     position: absolute;
     width: 280px;
     height: 57px;

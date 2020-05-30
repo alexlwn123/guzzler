@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Route, Link } from "react-router-dom";
-import CupSimulator from './CupSimulator';
 
 function Diagnostics(props) {
   const { heightFt, heightIn, material, amount } = props.data;
