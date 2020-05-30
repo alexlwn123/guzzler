@@ -1,28 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Raleway:wght@900&display=swap');
+
+body {
+    background-image: linear-gradient(#f95d9b, #e71d7a);
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titleCard {
+    padding: 10%;
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    animation-name: welcome;
+    animation-duration: 1s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.welcomeButton {
+    opacity: 0;
+    padding: 2%;
+    margin-top: 10%;
+    background-color: #347dc5;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    border: none;
+    bottom: 20%;
+    animation: button 2s forwards;
+    animation-delay: 1s;
 }
 
-.Navbar-wrapper {
-  background-color: #77c631;
-  height: 50px;
-  padding: 10px;
-  color: black;
+.startButton {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%);
+    background: #347DC5;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #FFFFFF;
+    
+}
 
+.cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 200px solid lightblue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0px;
+    width: 100px;
+}
+
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes button {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    position: absolute;
+    width: 280px;
+    height: 57px;
+    left: 48px;
+    top: 84px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
 

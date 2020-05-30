@@ -2,7 +2,11 @@ import React from 'react';
 
 function CupSimulator() {
   return (
-    <h1>CupSimulator</h1>
+    <div>
+
+      <h2>Try to fill the glass to the safe amount to drink!</h2>
+
+    </div>
   )
 }
 

@@ -4,10 +4,10 @@ import { Route, Link } from "react-router-dom";
 
 const LandingScreen = (props) => {
   return (
-    <div style={{position: 'absolute', top:'20%', left:'50%',  transform: 'translate(-50%, -20%)'}}>
-      <h1>GUZZLER</h1>
+    <div>
+      <h1 className="titleCard">GUZZLER</h1>
         <Link to="/diagnostics">
-          <button>
+          <button className="welcomeButton">
             ENTER GUZZLER 
           </button>
         </Link>
