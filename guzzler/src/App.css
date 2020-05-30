@@ -107,3 +107,49 @@
     color: #FFFFFF;
 }
 
+.submit {
+    background: #347DC5;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #FFFFFF;
+}
+
+.form {
+    font-family: "Poppins";
+    font-size: 30px;
+    text-align: center;
+}
+
+.height_ft {
+    padding: 5%;
+}
+
+.height_in {
+    padding: 5%;
+}
+
+.substance {
+    padding: 5%;
+}
+
+.amount {
+    padding: 5%;
+    max-width: 400px;
+}
+
+.card {
+    max-width: 400px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding: 5% 10% 5% 10%;
+}
+
