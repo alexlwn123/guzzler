@@ -1,12 +1,12 @@
 html {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#f95d9b, #e71d7a);
-  text-align: center;
-  background-size: cover;
-  overflow: hidden;
-  background-attachment: fixed;
-  min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#f95d9b, #f5a422);
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    min-height: 100%;
 }
 
 body {

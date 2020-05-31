@@ -36,7 +36,7 @@
         height: 13vmin;
         top: 8vmin;
         left: 13vmin;
-        background: #f83a86;
+        background: linear-gradient(#f95d87, #f9845d);
         border-radius: 19%;
     }
 
