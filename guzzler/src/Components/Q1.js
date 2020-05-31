@@ -9,6 +9,7 @@ function Diagnostics(props) {
   }
 
   return (
+
     <div>
       <form className="form">
               <div className="card">

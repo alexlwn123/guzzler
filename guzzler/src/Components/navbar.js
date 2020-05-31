@@ -26,6 +26,11 @@ const Header = (props) => {
             CupSimulator
           </button>
         </Link>
+        <Link to="/results">
+          <button style={{Style}}>
+            Results
+          </button>
+        </Link>
       </nav>
     </div>
   )
