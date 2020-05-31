@@ -10,13 +10,15 @@
     color: white;
     text-transform: uppercase;
     animation-name: welcome;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 .welcomeButton {
     opacity: 0;
     padding: 2%;
     margin-top: 10%;
+
+    border-radius: 9px;
     background-color: #347dc5;
     font-family: 'Poppins';
     font-size: 30px;
@@ -24,9 +26,17 @@
     color: white;
     border: none;
     bottom: 20%;
-    animation: button 2s forwards;
-    animation-delay: 1s;
+    animation: button 1s forwards;
+    animation-delay: 0.5s;
+
+    transition-duration: 0.2s;
+
+    outline: none;
 }
+    .welcomeButton:hover {
+        background-color: #c3d9ef;
+        color: black;
+    }
 
 .startButton {
     position: absolute;
@@ -46,7 +56,13 @@
     padding-left: 5%;
     padding-right: 5%;
     color: #FFFFFF;
-    
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.startButton:hover {
+       background-color: #c3d9ef;
+       color: black;
 }
 
 .cup {
@@ -96,7 +112,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: white;
 }
 
 
@@ -113,12 +129,20 @@
     padding-left: 5%;
     padding-right: 5%;
     color: #FFFFFF;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.submit:hover {
+    background-color: #c3d9ef;
+    color: black;
 }
 
 .form {
     font-family: "Poppins";
     font-size: 30px;
     text-align: center;
+    color: white;
 }
 
 .height_ft {
