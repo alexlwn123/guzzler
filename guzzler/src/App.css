@@ -148,24 +148,21 @@
 }
 
 .height_ft {
-  padding: 5%;
+  padding: 1%;
   font-family:"Poppins";
+  font-size: 20px;
 }
 
 .height_in {
-  padding: 5%;
-  font-family: "Poppins";
+    padding: 1%;
+    font-family: "Poppins";
+    font-size: 20px;
 }
 
 .substance {
-  padding: 5%;
-  font-family: "Poppins";
-}
-
-.amount {
-  padding: 5%;
-  max-width: 400px;
-  font-family: "Poppins";
+    padding: 1%;
+    font-family: "Poppins";
+    font-size: 20px;
 }
 
 .card {
