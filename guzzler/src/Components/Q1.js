@@ -11,9 +11,10 @@ function Diagnostics(props) {
   return (
 
     <div>
-      <form>
-        <p>How tall are you?</p>
-        <input
+      <form className="form">
+              <div className="card">
+              <p>How tall are you?</p>
+        <input className="height_ft"
           type = "number"
           min = "0"
           max = "10"
@@ -22,7 +23,7 @@ function Diagnostics(props) {
           value={heightFt}
           onChange={props.handler} 
         />
-        <input
+        <input className="height_in"
           type = "number"
           min = "0"
           max = "12"
@@ -34,7 +35,7 @@ function Diagnostics(props) {
 
         
         <p>Which substance do you plan to injest?</p>
-        <select
+          <select className="substance"
           value={material}
           name="substance"
           onChange={props.handler}
@@ -48,7 +49,7 @@ function Diagnostics(props) {
         <br />
 
         <p>How much substance do you plan to injest?</p>
-        <input
+        <input className="amount"
           type="number"
           name="amount"
           placeholder="(ml)"
@@ -59,8 +60,9 @@ function Diagnostics(props) {
         <br /> 
         <br /> 
         <Link to='/simulator'>
-          <button>Submit</button>
+          <button className="submit">Submit</button>
         </Link>
+        </div>
       </form>
     </div>
   )
