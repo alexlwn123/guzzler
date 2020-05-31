@@ -5,12 +5,13 @@ import loadable from "@loadable/component";
 import Loading from "./Components/Loading";
 import Header from "./Components/navbar.js";
 import Results from "./Components/Results.js";
+import Diagnostics from './Components/Q1.js'
 
 function App() {
   
   const LandingScreen = loadable(() => import("./Components/LandingScreen.js"), {fallback: <Loading />});
   const Simulator = loadable(() => import("./Components/CupSimulator.js"), {fallback: <Loading />});
-  const Diagnostics = loadable(() => import("./Components/Q1.js"), {fallback: <Loading />});
+  //const Diagnostics = loadable(() => import("./Components/Q1.js"), {fallback: <Loading />});
   const Results = loadable(() => import("./Components/Results.js"), {fallback: <Loading />});
 
   const [heightFt, setHeightFt] = useState("");
