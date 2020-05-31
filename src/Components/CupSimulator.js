@@ -11,8 +11,13 @@ function CupSimulator() {
   return (
     <div>
       <h2 className="p">Try to fill the glass to the safe amount to drink!</h2>
-      <div className="Cup" />
-      <button className="startButton" onClick={handleClick}>Start</button>
+        <div class="container">
+          <div className="Cup">
+                  <div className="beer"></div>
+              </div>
+         
+        </div>
+       <button className="startButton" onClick={handleClick}>Start</button>
     </div>
   )
 }
