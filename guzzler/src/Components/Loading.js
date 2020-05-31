@@ -1,9 +1,18 @@
 import React from 'react';
+import './style/loading.css' 
 
 
 function loading() {
   return (
-    <h1>Loading...</h1>
+     <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Guzzler</span>
+    </div>
   )
 }
 

@@ -1,16 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+import "./style/CupSimulator.css";
 
 function CupSimulator() {
-  console.log("adkljdfsalj;k");
+  const [isRunning, setIsRunning] = useState(false);
 
-  function handleClick() {
-
+  function handleClick(event) {
+    setIsRunning(!isRunning);
   }
 
   return (
     <div>
       <h2 className="p">Try to fill the glass to the safe amount to drink!</h2>
-      <div className="cup" />
+      <div className="Cup" />
       <button className="startButton" onClick={handleClick}>Start</button>
     </div>
   )
