@@ -9,6 +9,7 @@ function Diagnostics(props) {
   }
 
   return (
+
     <div>
       <form>
         <p>How tall are you?</p>

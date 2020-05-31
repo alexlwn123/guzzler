@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Raleway:wght@900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");
 
-
 .titleCard {
     padding: 10%;
     font-family: 'Raleway';
@@ -100,3 +99,46 @@
     color: #FFFFFF;
 }
 
+CupSimulatar {
+  margin: 100px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #ffc100;
+  border-left: 100px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+.stop-sign {
+  width: 100px;
+  height: 100px;
+  background: #ff4040;
+  position: relative;
+}
+.stop-sign:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid #ff4040;
+  border-left: 29px solid #fff;
+  border-right: 29px solid #fff;
+  width: 42px;
+  height: 0;
+}
+.stop-sign:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid #ff4040;
+  border-left: 29px solid #fff;
+  border-right: 29px solid #fff;
+  width: 42px;
+  height: 0;
+}
