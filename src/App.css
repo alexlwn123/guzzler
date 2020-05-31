@@ -218,11 +218,11 @@ CupSimulator {
     bottom: 5%;
     transform: translate(-50%);
     background: none;
-    border: 1px solid #ffadce;
+    border: 1px solid #8a4900;
     border-radius: 9px;
-    font-family: Poppins;
+    font-family: Arial;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 100;
     font-size: 20px;
     line-height: 25px;
     display: flex;
@@ -230,7 +230,7 @@ CupSimulator {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    color: #ffadce;
+    color: #8a4900;
     outline: none;
     transition-duration: 0.2s;
 }
