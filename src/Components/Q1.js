@@ -10,7 +10,7 @@ function Diagnostics(props) {
 
   return (
 
-      <div style={{"marginTop":"10%"}}>
+    <div style={{"marginTop":"3%"}}>
       <form className="form">
         <p>How tall are you?</p>
         <input
@@ -68,6 +68,7 @@ function Diagnostics(props) {
         </select>
         <br />
 
+        <br /> 
         <br /> 
         <Link to='/simulator'>
           <button className='submit'>Submit</button>

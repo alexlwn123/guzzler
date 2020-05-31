@@ -4,10 +4,9 @@ import { Route, Link } from "react-router-dom";
 import logo from '../res/Logo.png';
 
 
-
-
 const LandingScreen = (props) => {
-    const sodaCan = new Audio("http://www.orangefreesounds.com/wp-content/uploads/Kuglice/free-download-mp3.jpg");
+
+    const sodaCan = new Audio("https://www.fesliyanstudios.com/play-mp3/6920");
 
     useEffect(() => {
         async function playSound() {
