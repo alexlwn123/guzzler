@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link } from "react-router-dom";
 
 function Diagnostics(props) {
-  const { heightFt, heightIn, material, amount } = props.data;
+  const { weight, heightFt, heightIn, material, amount } = props.data;
 
   function onSubmit() {
 
@@ -32,6 +32,22 @@ function Diagnostics(props) {
           className="height_in"
           placeholder="in"
           value={heightIn}
+          onChange={props.handler} 
+          required
+        />
+        
+        <br />
+        <br />
+        
+        <p>How much do you weigh?</p>
+        <input
+          type = "number"
+          min = "0"
+          max = "300"
+          name="weight"
+          className="weight"
+          placeholder="lb."
+          value={weight}
           onChange={props.handler} 
           required
         />

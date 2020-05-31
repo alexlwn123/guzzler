@@ -40,7 +40,6 @@ function App() {
         <Route exact path="/simulator"> <Simulator material={material} /> </Route>
         <Route exact path="/results"> <Results material={material} /></Route>
         <Route exact path="/" component={LandingScreen} />
-      
       </Switch>
     </div>
   );

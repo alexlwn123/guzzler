@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 import stop from "../res/stopsign.png";
 
 
@@ -15,11 +16,13 @@ function Results(props) {
 
   return (
     <div>
-          <img src={stop} className="stop" style={{"top": "20px", "position": "relative"}} alt="STOP!" />
+      <img src={stop} className="stop" style={{"top": "20px", "position": "relative"}} alt="STOP!" />
       <p style={{"fontSize": "50px", "color": "white", "fontFamily":"Poppins"}}><b>Never Drink {material}!!</b></p>
       <p style={{"fontSize": "25px", "color":"white", "fontFamily":"Poppins"}}><i>...You should know better.</i></p>
-      <button className="home">Home</button>
-      </div>
+      <Link to="/">
+        <button className="home">Home</button>
+      </Link>
+    </div>
 
      
   )
