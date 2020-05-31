@@ -4,67 +4,67 @@
 
 
 .titleCard {
-    padding: 10%;
-    font-family: 'Raleway';
-    font-size: 50px;
-    font-weight: 900;
-    color: white;
-    text-transform: uppercase;
-    animation-name: welcome;
-    animation-duration: 0.5s;
+  padding: 10%;
+  font-family: 'Raleway';
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  animation-name: welcome;
+  animation-duration: 0.5s;
 }
 
 .welcomeButton {
-    opacity: 0;
-    padding: 2%;
-    margin-top: 10%;
+  opacity: 0;
+  padding: 2%;
+  margin-top: 10%;
 
-    border-radius: 9px;
-    background-color: #347dc5;
-    font-family: 'Poppins';
-    font-size: 30px;
-    font-weight: 800;
-    color: white;
-    border: none;
-    bottom: 20%;
-    animation: button 1s forwards;
-    animation-delay: 0.5s;
+  border-radius: 9px;
+  background-color: #347dc5;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border: none;
+  bottom: 20%;
+  animation: button 1s forwards;
+  animation-delay: 0.5s;
 
-    transition-duration: 0.2s;
+  transition-duration: 0.2s;
 
-    outline: none;
+  outline: none;
+}
 
-    .welcomeButton:hover {
-        background-color: #c3d9ef;
-        color: black;
-    }
+.welcomeButton:hover {
+  background-color: #c3d9ef;
+  color: black;
 }
 
 .startButton {
-    position: absolute;
-    left: 50%;
-    top: 75%;
-    transform: translate(-50%);
-    background: #347DC5;
-    border-radius: 9px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #FFFFFF;
-    outline: none;
-    transition-duration: 0.2s;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%);
+  background: #347DC5;
+  border-radius: 9px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #FFFFFF;
+  outline: none;
+  transition-duration: 0.2s;
 }
 
 .startButton:hover {
-       background-color: #c3d9ef;
-       color: black;
+  background-color: #c3d9ef;
+  color: black;
 }
 
 .cup {
@@ -101,50 +101,50 @@
 }
 
 .p {
-    margin-top: 5%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    top: 84px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
+  margin-top: 5%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 84px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
 
 
 .submit {
-    background: #347DC5;
-    border-radius: 9px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    align-items: center;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #FFFFFF;
-    outline: none;
-    transition-duration: 0.2s;
+  background: #347DC5;
+  border-radius: 9px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  align-items: center;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #FFFFFF;
+  outline: none;
+  transition-duration: 0.2s;
 }
 
 .submit:hover {
-    background-color: #c3d9ef;
-    color: black;
+  background-color: #c3d9ef;
+  color: black;
 }
 
 .form {
-    font-family: "Poppins";
-    font-size: 30px;
-    text-align: center;
-    color: white;
+  font-family: "Poppins";
+  font-size: 30px;
+  text-align: center;
+  color: white;
 }
 
 .height_ft {
