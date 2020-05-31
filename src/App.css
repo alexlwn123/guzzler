@@ -38,6 +38,7 @@
 .welcomeButton:hover {
   background-color: #c3d9ef;
   color: black;
+  cursor:pointer;
 }
 
 .startButton {
@@ -62,10 +63,11 @@
   transition-duration: 0.2s;
 }
 
-.startButton:hover {
-  background-color: #c3d9ef;
-  color: black;
-}
+    .startButton:hover {
+        background-color: #c3d9ef;
+        color: black;
+        cursor: pointer;
+    }
 
 .cup {
   position: absolute;
@@ -138,6 +140,7 @@
 .submit:hover {
   background-color: #c3d9ef;
   color: black;
+  cursor: pointer;
 }
 
 .form {
@@ -207,4 +210,31 @@ CupSimulator {
         height: 500px;
         width: 500px;
     }
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+    background: none;
+    border: 1px solid #ffadce;
+    border-radius: 9px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #ffadce;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.home:hover {
+    cursor: pointer;
 }
