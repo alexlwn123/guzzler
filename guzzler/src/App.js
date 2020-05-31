@@ -35,6 +35,7 @@ function App() {
     <div className="body">
       <Header />
       <Switch>
+        <Route exact path="/loading" component={Loading} />
         <Route exact path="/diagnostics"> <Diagnostics handler={handleChange} data={items} /></Route>
         <Route exact path="/simulator" component={Simulator} />
         <Route exact path="/results"> <Results material={material} /></Route>
