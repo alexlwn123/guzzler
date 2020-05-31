@@ -16,8 +16,8 @@ function Results(props) {
   return (
     <div>
           <img src={stop} className="stop" style={{"top": "20px", "position": "relative"}} alt="STOP!" />
-      <p style={{"fontSize": "50px", "color": "white", "font-family":"Poppins"}}><b>Never Drink {material}!!</b></p>
-      <p style={{"fontSize": "25px", "color":"white", "font-family":"Poppins"}}><i>...You should know better.</i></p>
+      <p style={{"fontSize": "50px", "color": "white", "fontFamily":"Poppins"}}><b>Never Drink {material}!!</b></p>
+      <p style={{"fontSize": "25px", "color":"white", "fontFamily":"Poppins"}}><i>...You should know better.</i></p>
     </div>
   )
 }
