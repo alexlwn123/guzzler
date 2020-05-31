@@ -11,7 +11,7 @@ function CupSimulator() {
   return (
     <div>
       <h2 className="p">Try to fill the glass to the safe amount to drink!</h2>
-        <div class="container">
+        <div className="container">
           <div className="Cup">
                   <div className="beer"></div>
               </div>

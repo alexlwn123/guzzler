@@ -6,7 +6,12 @@ function Results(props) {
   const {material} = props;
   const buzzerSound = new Audio("http://cdn.frustra.org/sounds/sound/vo/wheatley/sp_a1_wakeup_hacking12.ogg");
 
-  useEffect(() => buzzerSound.play(), []);
+  useEffect(() => {
+    async function playSound() {
+      buzzerSound.play();
+    }
+    playSound();
+  }, []);
 
   return (
     <div>
