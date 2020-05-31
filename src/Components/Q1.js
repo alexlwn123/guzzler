@@ -10,7 +10,7 @@ function Diagnostics(props) {
 
   return (
 
-    <div>
+      <div style={{"marginTop":"10%"}}>
       <form className="form">
         <p>How tall are you?</p>
         <input
