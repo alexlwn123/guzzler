@@ -17,6 +17,7 @@
   bottom: 0;
   animation: wipe 10s forwards;
 }
+
 @keyframes wipe {
   0% {
     height: 0;
