@@ -51,6 +51,7 @@
     animation: beer 2s forwards;
 }
 
+<<<<<<< HEAD:guzzler/src/Components/style/CupSimulator.css
 @keyframes beer {
     0%{
         margin-top: 29vmin;
@@ -60,4 +61,13 @@
         margin-top: 1.5vmin;
         height: 28vmin;
     }
+=======
+@keyframes wipe {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+>>>>>>> f01755a1f43711614f359978647d226563c89818:src/Components/style/CupSimulator.css
 }
