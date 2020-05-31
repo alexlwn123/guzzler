@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Link } from "react-router-dom";
 
 function Diagnostics(props) {
@@ -43,10 +43,9 @@ function Diagnostics(props) {
           onChange={props.handler}
         >       
           <option value = "">-- Select a substance --</option>
-          <option value = "water">Water</option>
-          <option value = "bleach">Bleach</option>
-          <option value = "gasoline">Gasoline</option>
-          <option value = "hcl">Hydrochloric Acid</option>
+          <option value = "Bleach">Bleach</option>
+          <option value = "Gasoline">Gasoline</option>
+          <option value = "Hcl">Hydrochloric Acid</option>
         </select>
         <br />
 
