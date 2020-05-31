@@ -4,14 +4,18 @@
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Cup::before {
+  margin-left: auto;
+  margin-right: auto;
   content: '';
   position: absolute;
   background: #04ACFF;
   width: 100%;
   bottom: 0;
-  animation: wipe 5s cubic-bezier(.2,.6,.8,.4) forwards;
+  animation: wipe 10s forwards;
 }
 @keyframes wipe {
   0% {
