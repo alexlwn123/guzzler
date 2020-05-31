@@ -22,6 +22,7 @@ function Diagnostics(props) {
           placeholder="ft"
           value={heightFt}
           onChange={props.handler} 
+          required
         />
         <input
           type = "number"
@@ -32,6 +33,7 @@ function Diagnostics(props) {
           placeholder="in"
           value={heightIn}
           onChange={props.handler} 
+          required
         />
 
         
@@ -41,11 +43,12 @@ function Diagnostics(props) {
           name="substance"
           className="substance"
           onChange={props.handler}
+          required
         >       
           <option value = "">-- Select a substance --</option>
           <option value = "Bleach">Bleach</option>
           <option value = "Gasoline">Gasoline</option>
-          <option value = "Hcl">Hydrochloric Acid</option>
+          <option value = "HCl">Hydrochloric Acid</option>
         </select>
         <br />
 

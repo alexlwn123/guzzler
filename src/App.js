@@ -37,7 +37,7 @@ function App() {
       <Switch>
         <Route exact path="/loading" component={Loading} />
         <Route exact path="/diagnostics"> <Diagnostics handler={handleChange} data={items} /></Route>
-        <Route exact path="/simulator" component={Simulator} />
+        <Route exact path="/simulator"> <Simulator material={material} /> </Route>
         <Route exact path="/results"> <Results material={material} /></Route>
         <Route exact path="/" component={LandingScreen} />
       
